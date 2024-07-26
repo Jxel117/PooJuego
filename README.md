@@ -38,3 +38,8 @@
 - La serpiente se moverá continuamente en la dirección actual hasta que el jugador cambie su dirección con las teclas de flecha.
 - El objetivo es consumir la comida que aparece en el mapa. Cada vez que la serpiente come, crece en tamaño y el marcador aumenta.
 - El juego termina si la serpiente choca consigo misma.
+----
+### 🌟 DESARROLLADORES
+
+[![Jxel117 · he/him](https://raw.githubusercontent.com/Jxel117/PooJuego/develop/Imagenes/Captura%20de%20pantalla%202024-07-26%20010136.png?size=60)](https://github.com/Jxel117)           [![Diego162306](https://raw.githubusercontent.com/Jxel117/PooJuego/develop/Imagenes/Captura%20de%20pantalla%202024-07-26%20010322.png?size=60)](https://github.com/Diego162306)           [![YooneR1209](https://raw.githubusercontent.com/Jxel117/PooJuego/develop/Imagenes/Captura%20de%20pantalla%202024-07-26%20010241.png?size=60)](https://github.com/YooneR1209)
+
