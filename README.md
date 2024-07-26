@@ -47,10 +47,6 @@
 - **Fin del juego**: El juego finaliza cuando la serpiente choca consigo misma. 🔚
 
 
-
-- **Fin del juego**: El juego finaliza cuando la serpiente choca consigo misma. 🔚
-
-
 <img src="https://raw.githubusercontent.com/Jxel117/PooJuego/develop/Imagenes/Game-Over.png" alt="GIF" width="300" height="200"></p>
 
 
