@@ -16,7 +16,7 @@
 <img src="https://i.pinimg.com/originals/35/60/21/356021c99fded9d442b02d0b48891338.gif" height="28px">
 </p>  
 
-# 📍 Atajos del README
+# 📍 Atajos del README 📍
 | TEMA | DESCRIPCIÓN | ATAJO |
 |------|-------------|-------|
 | 💻 **Descripción** | *Descripcion del juego* |[ver](https://github.com/Jxel117/PooJuego?tab=readme-ov-file#descripci%C3%B3n-) |
