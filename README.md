@@ -22,7 +22,7 @@
 | 💻 **Descripción** | *Descripcion del juego* |[ver](https://github.com/Jxel117/PooJuego?tab=readme-ov-file#descripci%C3%B3n-) |
 | ⚙️ **Características** | *Caracteristicas del juego* |[ver](https://github.com/Jxel117/PooJuego?tab=readme-ov-file#caracter%C3%ADsticas-%EF%B8%8F) |
 | 🕹️**Cómo jugar** | *Instrucciones de uso* |[ver](https://github.com/Jxel117/PooJuego?tab=readme-ov-file#c%C3%B3mo-jugar-%EF%B8%8F) |
-| 🧩 **Diagrama UML** | *Diagrama de clases del juego* |[ver]() |
+| 🧩 **Diagrama UML** | *Diagrama de clases del juego* |[ver](https://github.com/Jxel117/PooJuego?tab=readme-ov-file#diagrama-de-clases-) |
 | ✅ **COLABORADORES** | *Implicados en este proyecto* |[ver](https://github.com/Jxel117/PooJuego?tab=readme-ov-file#-desarrolladores) |
 ----
 
