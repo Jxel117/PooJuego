@@ -12,7 +12,7 @@
 <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXd6Zm0zYjZjZG9nZHJvemFwam13M21paGF6M2U4d2hiNnpya2h1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/a9dGnkMNSSwDeR8Xii/giphy.webp" alt="GIF" width="500" height="250"></p>
 </div>
 <p align="center">
-<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYANOS CON UNA 🌟 ¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
+<a href="#"><img title="La Culebrita 🐍" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYANOS CON UNA 🌟 ¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
 <img src="https://i.pinimg.com/originals/35/60/21/356021c99fded9d442b02d0b48891338.gif" height="28px">
 </p>  
 
