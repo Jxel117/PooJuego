@@ -31,7 +31,7 @@
 "La Culebrita" es un juego clásico de Nokia, hemos desarrollado la misma interfaz en Java utilizando NetBeans. En este juego, el jugador controla una serpiente que se mueve por el mapa en busca de comida (puntos) generada aleatoriamente. A medida que la serpiente consume la comida, crece en tamaño y el jugador acumula puntos. El juego termina si la serpiente choca consigo misma.
 
 <div align="center">
-<img src="https://images.hive.blog/p/hgjbks2vRxvf3xsYr6qQ7dm31DuBHGui8pKMdEVPxhLfEeEoVMPfUw4awqLGYNSybnpxcYbMLQUQhVrfnUtzuD7Yr1?format=match&mode=fit" alt="GIF" width="400" height="300"></p>
+<img src="https://images.hive.blog/p/hgjbks2vRxvf3xsYr6qQ7dm31DuBHGui8pKMdEVPxhLfEeEoVMPfUw4awqLGYNSybnpxcYbMLQUQhVrfnUtzuD7Yr1?format=match&mode=fit" alt="GIF" width="300" height="200"></p>
 </div>
 
 ## Características ⚙️
