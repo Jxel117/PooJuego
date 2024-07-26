@@ -10,9 +10,9 @@
 # 📍 Atajos del README
 | TEMA | DESCRIPCIÓN | ATAJO |
 |------|-------------|-------|
-| 💻 **Descripción** | *Descripcion del juego* |[ver](https://github.com/Jxel117/PooJuego/edit/main/README.md#descripci%C3%B3n-) |
-| ⚙️ **Características** | *Caracteristicas del juego* |[ver](https://github.com/Jxel117/PooJuego/edit/main/README.md#caracter%C3%ADsticas-%EF%B8%8F) |
-| 🕹️**Cómo jugar** | *Instrucciones de uso* |[ver](https://github.com/Jxel117/PooJuego/edit/main/README.md#c%C3%B3mo-jugar-%EF%B8%8F) |
+| 💻 **Descripción** | *Descripcion del juego* |[ver](https://github.com/Jxel117/PooJuego?tab=readme-ov-file#descripci%C3%B3n-) |
+| ⚙️ **Características** | *Caracteristicas del juego* |[ver](https://github.com/Jxel117/PooJuego?tab=readme-ov-file#caracter%C3%ADsticas-%EF%B8%8F) |
+| 🕹️**Cómo jugar** | *Instrucciones de uso* |[ver](https://github.com/Jxel117/PooJuego?tab=readme-ov-file#c%C3%B3mo-jugar-%EF%B8%8F) |
 | 📦⛏️ **1** | *agregar* |[ver]() |
 | ☁️ **2** | *agregar* |[ver]() |
 | 🟣 **3** | *agregar* |[ver]() |
