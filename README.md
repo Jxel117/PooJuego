@@ -50,9 +50,10 @@
 
 ## Cómo jugar 🕹️
 - Usa las teclas de flecha para mover la serpiente en las cuatro direcciones: arriba, abajo, izquierda y derecha.
-- La serpiente se moverá continuamente en la dirección actual hasta que el jugador cambie su dirección con las teclas de flecha.
-- El objetivo es consumir la comida que aparece en el mapa. Cada vez que la serpiente come, crece en tamaño y el marcador aumenta.
-- El juego termina si la serpiente choca consigo misma.
+  ⬆️⬇️⬅️➡️
+- La serpiente se moverá continuamente en la dirección actual hasta que el jugador cambie su dirección con las teclas de flecha. 🔁🔁
+- El objetivo es consumir la comida que aparece en el mapa. Cada vez que la serpiente come, crece en tamaño y el marcador aumenta.🍎📈
+- El juego termina si la serpiente choca consigo misma. 💥💥💥
 
 ## Diagrama de clases 🧩
 <div align="center">
