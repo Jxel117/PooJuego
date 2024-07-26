@@ -1,5 +1,7 @@
-# PooJuego
-- Juego desarrollado en Java
+# Programación Orientada a Objetos - Creación de un Juego
+- Juego desarrollado en Java en IDE de NetBeans.
+- La carpeta "src" contiene las clases necesarias para su ejecución. 
+
 # La Culebrita
 
 ## Descripción
