@@ -17,3 +17,7 @@
 - La serpiente se moverá continuamente en la dirección actual hasta que el jugador cambie su dirección con las teclas de flecha.
 - El objetivo es consumir la comida que aparece en el mapa. Cada vez que la serpiente come, crece en tamaño y el marcador aumenta.
 - El juego termina si la serpiente choca consigo misma.
+
+## UML
+
+![UML](https://raw.githubusercontent.com/Jxel117/PooJuego/develop/Imagenes/JuegoSnake.PNG)
