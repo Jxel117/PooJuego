@@ -4,12 +4,12 @@ import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
-public class PanelFondo extends JPanel {
+public class Terreno extends JPanel {
     
     Color colorfondo = Color.green;
     int tammax, tam, can, res;
     
-    public PanelFondo(int tammax, int can) {
+    public Terreno(int tammax, int can) {
         this.tammax = tammax;
         this.can = can;
         this.tam = tammax / can;

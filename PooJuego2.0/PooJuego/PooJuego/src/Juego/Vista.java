@@ -5,18 +5,18 @@ import java.awt.event.KeyEvent;
 
 public class Vista extends javax.swing.JFrame {
     
-    PanelSerpiente panel;
+    Serpiente panel;
     public Vista() {
         initComponents();
         this.setTitle("Juego de la Serpiente"); 
         this.setLocationRelativeTo(null);
         
-        panel = new PanelSerpiente(400, 30);
+        panel = new Serpiente(400, 30);
         this.add(panel);
         panel.setBounds(10, 10, 400, 400);
         panel.setOpaque(false);
         
-        PanelFondo fondo = new PanelFondo(400, 30);
+        Terreno fondo = new Terreno(400, 30);
         this.add(fondo);
         fondo.setBounds(10, 10, 400, 400);
         

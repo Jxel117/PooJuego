@@ -7,23 +7,25 @@ import java.util.List;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
-public class PanelSerpiente extends JPanel {
+public class Serpiente extends JPanel implements Runnable {
 
     Color colorSerpiente = Color.blue;
-    Color colorcomida = Color.red;
+    Color colorComida = Color.red;
     int tammax, tam, can, res;
     List<int[]> serpiente = new ArrayList<>();
-    int[] comida = new int[2];
+    Comida comida;
+    Marcador marcador;
     String direccion = "de";
     String direccionproxima = "de"; 
-    int puntuacion = 0; // Variable de puntuación
-    
+    boolean estado = true;
+
     Thread hilo;
-    Caminante camino;
     JButton reiniciarBoton;
 
-    public PanelSerpiente(int tammax, int can){
+    public Serpiente(int tammax, int can){
         this.tammax = tammax;
         this.can = can;
         this.tam = tammax / can;
@@ -32,11 +34,12 @@ public class PanelSerpiente extends JPanel {
         int[] b = {can / 2, can / 2 - 1};
         serpiente.add(a);
         serpiente.add(b);
-        crearcomida();
 
-        camino = new Caminante(this);
-        hilo = new Thread(camino);
-        hilo.start();
+        // Inicializar la comida
+        crearComida();
+
+        // Inicializar el marcador
+        marcador = new Marcador(10, 20, Color.BLACK);
 
         reiniciarBoton = new JButton("Reiniciar");
         reiniciarBoton.setBounds(10, 30, 100, 30);
@@ -67,6 +70,9 @@ public class PanelSerpiente extends JPanel {
                 }
             }
         });
+
+        hilo = new Thread(this);
+        hilo.start();
     }
 
     @Override
@@ -78,12 +84,11 @@ public class PanelSerpiente extends JPanel {
             pintor.fillRect(res / 2 + par[0] * tam, res / 2 + par[1] * tam, tam - 1, tam - 1);    
         }
 
-        pintor.setColor(colorcomida);
-        pintor.fillRect(res / 2 + comida[0] * tam, res / 2 + comida[1] * tam, tam - 1, tam - 1);
+        pintor.setColor(comida.getColor());
+        pintor.fillRect(res / 2 + comida.getX() * tam, res / 2 + comida.getY() * tam, tam - 1, tam - 1);
         
-        // Mostrar la puntuación
-        pintor.setColor(Color.BLACK);
-        pintor.drawString("Puntuación: " + puntuacion, 10, 20);
+        // Dibujar el marcador
+        marcador.dibujar(pintor);
     }
 
     public void avanzar(){
@@ -107,14 +112,14 @@ public class PanelSerpiente extends JPanel {
             }
         }
         if(existe){
-            JOptionPane.showMessageDialog(this, "PERDISTE. Puntuación: " + puntuacion);
+            JOptionPane.showMessageDialog(this, "PERDISTE. Puntuación: " + marcador.getPuntuacion());
             reiniciarBoton.setVisible(true);
-            camino.parar();
+            parar();
         } else {
-            if(nuevo[0] == comida[0] && nuevo[1] == comida[1]){
+            if(nuevo[0] == comida.getX() && nuevo[1] == comida.getY()){
                 serpiente.add(nuevo);
-                crearcomida();
-                puntuacion++; // Incrementar la puntuación
+                crearComida();
+                marcador.aumentarPuntuacion(); // Incrementar la puntuación
             } else {
                 serpiente.add(nuevo);
                 serpiente.remove(0);   
@@ -122,20 +127,19 @@ public class PanelSerpiente extends JPanel {
         }
     }
 
-    public void crearcomida(){
+    public void crearComida(){
         boolean existe = false;
         int a = (int)(Math.random() * can);
         int b = (int)(Math.random() * can);
         for (int[] par : serpiente){
             if(par[0] == a && par[1] == b){
                 existe = true;
-                crearcomida();
+                crearComida();
                 break;
             }
         }
         if(!existe){
-            this.comida[0] = a;
-            this.comida[1] = b;
+            comida = new Comida(a, b, colorComida);
         }
     }
 
@@ -154,7 +158,7 @@ public class PanelSerpiente extends JPanel {
 
     public void reiniciarJuego() {
         // Detener el hilo actual
-        camino.parar();
+        parar();
         try {
             hilo.join();  // Esperar a que el hilo termine
         } catch (InterruptedException e) {
@@ -167,25 +171,36 @@ public class PanelSerpiente extends JPanel {
         int[] b = {can / 2, can / 2 - 1};
         serpiente.add(a);
         serpiente.add(b);
-        crearcomida();
-        puntuacion = 0;
+        crearComida();
+        marcador.resetearPuntuacion(); // Resetear la puntuación
         direccion = "de";
         direccionproxima = "de";
         reiniciarBoton.setVisible(false);
 
         // Iniciar un nuevo hilo
-        camino = new Caminante(this);
-        hilo = new Thread(camino);
+        estado = true;
+        hilo = new Thread(this);
         hilo.start();
 
         // Enfocar el panel para que reciba eventos del teclado
         setFocusable(true);
         requestFocusInWindow();
     }
+
+    public void parar() {
+        this.estado = false;
+    }
+
+    @Override
+    public void run() {
+        while (estado){
+            avanzar();
+            repaint();
+            try {
+                Thread.sleep(200);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Serpiente.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
 }
-
-
-
-           
-    
-

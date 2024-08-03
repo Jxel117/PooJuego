@@ -16,7 +16,7 @@ import javax.swing.JFrame;
 public class Main {
     public static void main(String[] args) {
         JFrame ventana = new JFrame("Juego de la Culebrita");
-        PanelSerpiente panelSerpiente = new PanelSerpiente(600, 20);
+        Serpiente panelSerpiente = new Serpiente(600, 20);
         
         ventana.add(panelSerpiente);
         ventana.setSize(620, 640);
