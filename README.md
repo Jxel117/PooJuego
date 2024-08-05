@@ -59,7 +59,7 @@
 
 ## Diagrama de clases 🧩
 <div align="center">
-<img src="https://raw.githubusercontent.com/Jxel117/PooJuego/develop/Imagenes/JuegoSnake.PNG">
+<img src="https://raw.githubusercontent.com/Jxel117/PooJuego/main/Imagenes/JuegoSnake.PNG">
 </div>
 
 ----
